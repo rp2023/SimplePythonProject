@@ -12,8 +12,8 @@ Add the sorce code file and docker file into Main branch of repository
   step-03 Clone the github repo using.
   --------------------------------------
   
-   $git clone <repo url>
-   $cd repo
+   $git clone https://github.com/rp2023/SimplePythonProject.git
+   $cd SimplePythonProject.git
   check docker Working or not
     $docker ps
 
@@ -25,7 +25,7 @@ Add the sorce code file and docker file into Main branch of repository
    
   step-05 Tag image
   ---------------------------
-   $docker tag <imagename> <tagname>
+   $docker tag <imagename> <tagname> 
    
   step-06 Push taged image into dockerhub registry
   -------------------------------------
@@ -37,8 +37,11 @@ Add the sorce code file and docker file into Main branch of repository
   $docker run -d -p 5000:5000 imagename.
   Note: Container will run on port no 5000 we nned to enable SG of ec2-vm inbound-outbound rule as 5000 port.
         
-  steo-08 Check app work or not
+  step-08 Check app work or not
   ---------------------------------------
      https://public-ip:5000/time
-     
+
+  step-09 Pull my docker image for verification
+  ------------------------------------------------------
+  $docker pull rahuldev417/simple_time_service:latest
    
