@@ -12,12 +12,12 @@ Add the sorce code file and docker file into Main branch of repository
   step-03 Clone the github repo using.
   --------------------------------------
   
-   $git clone https://github.com/rp2023/SimplePythonProject.git
+     git clone https://github.com/rp2023/SimplePythonProject.git
    
-   $cd SimplePythonProject.git
+     cd SimplePythonProject.git
    
   check docker Working or not
-    $docker ps
+     docker ps
 
 
   step-04 Build the docker image.
