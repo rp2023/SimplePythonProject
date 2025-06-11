@@ -26,15 +26,16 @@ Add the sorce code file and docker file into Main branch of repository
   step-05 Tag image
   ---------------------------
    $docker tag <imagename> <tagname>
+   
   step-06 Push taged image into dockerhub registry
+  -------------------------------------
    $docker push <tagname>
    
   step-07 Run docker container
   --------------------------------
   
   $docker run -d -p 5000:5000 imagename.
-  Note: Container will run on port no 5000 we nned to enable SG of ec2-vm 
-        inbound-outbound rule as 5000 port.
+  Note: Container will run on port no 5000 we nned to enable SG of ec2-vm inbound-outbound rule as 5000 port.
         
   steo-08 Check app work or not
   ---------------------------------------
